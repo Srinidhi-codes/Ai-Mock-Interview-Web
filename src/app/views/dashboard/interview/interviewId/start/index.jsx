@@ -45,7 +45,7 @@ function StartInterviewPage({ params }) {
                         {activeQueIndex > 0 && <Button onClick={() => setActiveQueIndex(activeQueIndex - 1)}><ChevronsLeft />Previous Question</Button>}
                         {activeQueIndex != process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT - 1 && <Button onClick={() => setActiveQueIndex(activeQueIndex + 1)}><ChevronsRight />Next Question</Button>}
                         {activeQueIndex == process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT - 1 &&
-                            <Link href={`/dashboard/interview/${data?.mockInterview?.mockId}/feedback`} >
+                            <Link href={`/dashboard/interview/${interviewId}/feedback`} >
                                 <Button> End Interview</Button>
                             </Link>
                         }

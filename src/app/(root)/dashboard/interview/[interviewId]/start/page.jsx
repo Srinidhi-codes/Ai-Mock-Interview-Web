@@ -3,7 +3,7 @@ import StartInterviewPage from "@/app/views/dashboard/interview/interviewId/star
 function StartInterview({ params }) {
 
     return (
-        <StartInterviewPage />
+        <StartInterviewPage params={params} />
     )
 }
 

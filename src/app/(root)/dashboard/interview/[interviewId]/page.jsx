@@ -1,8 +1,8 @@
 import InterviewPage from '@/app/views/dashboard/interview';
 
-function Interview() {
+function Interview({ params }) {
     return (
-        <InterviewPage />
+        <InterviewPage params={params} />
     );
 }
 
