@@ -1,6 +1,6 @@
+import Header from '@/app/(root)/dashboard/_components/Header'
 import Image from 'next/image'
 import React from 'react'
-import Header from '../dashboard/_components/Header'
 
 function About() {
   return (
