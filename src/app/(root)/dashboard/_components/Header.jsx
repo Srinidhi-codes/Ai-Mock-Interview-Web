@@ -15,7 +15,7 @@ const Header = () => {
 
     const { user } = useUser();
     return (
-        <div className='flex p-4 mt-[5rem] items-center justify-between bg-secondary shadow-sm'>
+        <div className='flex p-4 items-center justify-between bg-secondary shadow-sm'>
             <Link href={'/'}>
                 <Image src={'/logo.png'} width={80} height={100} alt='logo' />
             </Link>
