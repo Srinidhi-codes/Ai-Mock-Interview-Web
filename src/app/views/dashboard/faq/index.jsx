@@ -5,7 +5,7 @@ import {
     CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 import { ChevronsUpDown } from 'lucide-react';
-import Header from '../dashboard/_components/Header';
+import Header from '@/app/(root)/dashboard/_components/Header';
 
 const faqs = [
     {
