@@ -24,10 +24,12 @@ const Header = () => {
                 <Link href={'/dashboard/faq'} className={`${path === '/dashboard/faq' && 'text-primary font-bold'} hover:text-primary transition-all`}>Question's</Link>
                 <Link href={'/about'} className={`${path === '/dashboard/about' && 'text-primary font-bold'} hover:text-primary transition-all`}>About</Link>
             </ul>}
-            <UserButton />
-            {!user && <Link href="/dashboard">
-                <Button variant="outline" className="flex justify-end items-end hover:underline hover:transition-all hover:delay-500">Try Now</Button>
-            </Link>}
+            <div className='flex gap-2'>
+                <UserButton />
+                {!user && <Link href="/dashboard">
+                    <Button variant="outline" className="flex justify-end items-end hover:underline hover:transition-all hover:delay-500">Try Now</Button>
+                </Link>}
+            </div>
         </div>
     )
 }
