@@ -37,7 +37,7 @@ export default function Home() {
         <div className="flex lg:flex-row flex-col justify-between px-10 py-8 rounded-md md:w-[80vw] md:h-[15rem] w-auto h-auto border mt-[5rem] hover:shadow-lg transition-all">
           <div>
             <h1 className="lg:text-[2rem] text-xl font-bold">Get Your Interview Prep's With <span className="text-blue-500 animate-pulse delay-300 transition-all">AI</span></h1>
-            <h1 className="lg:text-md text-xs font-medium">Made with Gemini AI.</h1>
+            <h1 className="lg:text-lg text-xs font-medium py-2">Made with Gemini AI.</h1>
             <div className="flex lg:flex-row flex-col gap-4 py-5">
               <Link href={'/dashboard'}>
                 <Button>Get Prepared</Button>
