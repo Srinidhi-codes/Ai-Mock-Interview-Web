@@ -3,6 +3,7 @@ import { gql, useLazyQuery } from '@apollo/client';
 import { useUser } from '@clerk/nextjs';
 import React, { useEffect, useState } from 'react'
 import InterviewCard from './InterviewCard';
+import Loader from '@/app/(root)/dashboard/_components/Loader';
 
 
 const QUERY_MOCK_INTERVIEW = gql`
@@ -45,7 +46,7 @@ function InterviewList() {
                         <InterviewCard key={interview?.id} interviewData={interview} />
                     ))}
                 </div>
-            </div> : ""}
+            </div> : <Loader />}
         </>
     )
 }
