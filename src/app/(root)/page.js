@@ -33,12 +33,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex flex-col justify-center items-center gap-5">
-        <div className="flex justify-between px-10 py-8 rounded-md w-[80vw] h-[15rem] border mt-[5rem] hover:shadow-lg transition-all">
+      <div className="flex flex-col justify-center items-center gap-5 px-5">
+        <div className="flex lg:flex-row flex-col justify-between px-10 py-8 rounded-md md:w-[80vw] md:h-[15rem] w-auto h-auto border mt-[5rem] hover:shadow-lg transition-all">
           <div>
-            <h1 className="text-[2rem] font-bold">Get Your Interview Prep's With <span className="text-blue-500 animate-pulse delay-300 transition-all">AI</span></h1>
-            <h1 className="text-md font-medium">Made with Gemini AI.</h1>
-            <div className="flex gap-4 py-5">
+            <h1 className="lg:text-[2rem] text-xl font-bold">Get Your Interview Prep's With <span className="text-blue-500 animate-pulse delay-300 transition-all">AI</span></h1>
+            <h1 className="lg:text-md text-xs font-medium">Made with Gemini AI.</h1>
+            <div className="flex lg:flex-row flex-col gap-4 py-5">
               <Link href={'/dashboard'}>
                 <Button>Get Prepared</Button>
               </Link>
@@ -47,7 +47,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="h-[15rem]">
+          <div className="h-[15rem] lg:block hidden">
             <Image src={"/banner.png"} alt="Banner" width={350} height={150} className="w-[300px] h-[17rem] mt-[-5rem]" />
           </div>
         </div>
