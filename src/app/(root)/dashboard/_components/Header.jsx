@@ -15,8 +15,8 @@ const Header = () => {
 
     const { user } = useUser();
     return (
-        <div className='flex p-4 items-center justify-between bg-secondary shadow-sm'>
-            <Link href={'/dashboard'}>
+        <div className='flex p-4 mt-[5rem] items-center justify-between bg-secondary shadow-sm'>
+            <Link href={'/'}>
                 <Image src={'/logo.png'} width={80} height={100} alt='logo' />
             </Link>
             {user && <ul className='hidden md:flex gap-6 cursor-pointer'>
