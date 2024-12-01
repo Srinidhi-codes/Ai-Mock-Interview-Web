@@ -22,7 +22,7 @@ const Header = () => {
             </Link>
             {user && <ul className='hidden md:flex gap-6 cursor-pointer'>
                 <Link href={'/dashboard'} className={`${path === '/dashboard' && 'text-primary font-bold'} hover:text-primary transition-all`}>Dashboard</Link>
-                <Link href={'/dashboard/faq'} className={`${path === '/dashboard/faq' && 'text-primary font-bold'} hover:text-primary transition-all`}>Question's</Link>
+                <Link href={'/faq'} className={`${path === '/dashboard/faq' && 'text-primary font-bold'} hover:text-primary transition-all`}>Question's</Link>
                 <Link href={'/about'} className={`${path === '/dashboard/about' && 'text-primary font-bold'} hover:text-primary transition-all`}>About</Link>
             </ul>}
             <div className='flex gap-2'>
