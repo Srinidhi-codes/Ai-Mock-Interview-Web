@@ -5,6 +5,7 @@ import {
     CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 import { ChevronsUpDown } from 'lucide-react';
+import Header from '../dashboard/_components/Header';
 
 const faqs = [
     {
@@ -27,21 +28,24 @@ const faqs = [
 
 
 
-function FaqPage() {
+function Faq() {
     return (
         <>
-            <h2 className='font-bold text-xl mt-5'>Frequently Asked Question's?</h2>
-            <div className='flex flex-col justify-start items-start border rounded-lg mt-10'>
-                {faqs.map((faq, idx) => <Collapsible className='w-full px-5' key={idx}>
-                    <CollapsibleTrigger className='w-full flex justify-between p-2 bg-secondary rounded-lg my-5'>{faq.question} <ChevronsUpDown /></CollapsibleTrigger>
-                    <CollapsibleContent className='p-2 border rounded-lg text-sm text-gary-500'>
-                        {faq.answer}
-                    </CollapsibleContent>
-                </Collapsible>)}
+            <Header />
+            <div className='px-[10rem]'>
+                <h2 className='font-bold text-xl mt-5'>Frequently Asked Question's?</h2>
+                <div className='flex flex-col justify-start items-start border rounded-lg mt-10'>
+                    {faqs.map((faq, idx) => <Collapsible className='w-full px-5' key={idx}>
+                        <CollapsibleTrigger className='w-full flex justify-between p-2 bg-secondary rounded-lg my-5'>{faq.question} <ChevronsUpDown /></CollapsibleTrigger>
+                        <CollapsibleContent className='p-2 border rounded-lg text-sm text-gary-500'>
+                            {faq.answer}
+                        </CollapsibleContent>
+                    </Collapsible>)}
 
+                </div>
             </div>
         </>
     )
 }
 
-export default FaqPage
+export default Faq

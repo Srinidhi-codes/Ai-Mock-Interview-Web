@@ -1,9 +1,10 @@
 import { ThumbsUp } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const Card = ({ data }) => {
     return (
-        <div className='flex gap-2 lg:flex-row flex-col'>
+        <Link href={'/faq'} className='flex gap-2 lg:flex-row flex-col'>
             {data?.map((item) => <article className="rounded-xl border-2 w-full border-gray-100 bg-white">
                 <div className="flex w-full items-start gap-4 p-4 sm:p-6 lg:p-8">
                     <a href="#" className="block shrink-0">
@@ -63,7 +64,7 @@ const Card = ({ data }) => {
                     </strong>
                 </div>
             </article>)}
-        </div>
+        </Link>
     )
 }
 

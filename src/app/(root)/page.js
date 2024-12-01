@@ -52,6 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-[75vw] mt-[5rem]">
+          <h1 className="lg:text-[1.5rem] text-xl font-bold  pb-5">What Top Expert's Say ..?</h1>
           <Card data={data} />
         </div>
       </div>
